@@ -1,5 +1,15 @@
 <template>
   <div>
-    <h1>Hi There</h1>
+    <HomeContent />
   </div>
 </template>
+
+<script>
+import HomeContent from "~/components/HomeContent.vue";
+
+export default {
+  components: {
+    HomeContent,
+  },
+};
+</script>
