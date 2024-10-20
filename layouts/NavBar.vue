@@ -1,26 +1,28 @@
 <template>
-  <nav class="bg-gray-800 sticky top-0 z-50">
+  <nav
+    class="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 shadow-lg sticky top-0 z-50"
+  >
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
+        <!-- Mobile menu button -->
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <!-- Mobile menu button -->
           <button
+            @click="toggleMobileMenu"
             type="button"
-            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-300 ease-in-out"
             aria-controls="mobile-menu"
-            aria-expanded="false"
+            :aria-expanded="isMobileMenuOpen"
           >
-            <span class="absolute -inset-0.5"></span>
             <span class="sr-only">Open main menu</span>
             <!-- Icon when menu is closed -->
             <svg
+              v-if="!isMobileMenuOpen"
               class="block h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
               aria-hidden="true"
-              data-slot="icon"
             >
               <path
                 stroke-linecap="round"
@@ -30,13 +32,13 @@
             </svg>
             <!-- Icon when menu is open -->
             <svg
-              class="hidden h-6 w-6"
+              v-if="isMobileMenuOpen"
+              class="block h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
               aria-hidden="true"
-              data-slot="icon"
             >
               <path
                 stroke-linecap="round"
@@ -46,43 +48,45 @@
             </svg>
           </button>
         </div>
+
         <div
           class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
-            <img
-              class="h-8 w-auto"
-              src="../static/MukeshCodesLogo.svg"
-              alt="Your Company"
-            />
+            <NuxtLink to="/">
+              <img
+                class="h-8 w-auto hover:scale-110 transform transition duration-300"
+                src="../static/MukeshCodesLogo.svg"
+                alt="Your Company"
+              />
+            </NuxtLink>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              <a
-                href="#"
-                class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                aria-current="page"
-                >About</a
+              <NuxtLink
+                to="/about"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >About</NuxtLink
               >
-              <a
-                href="#"
-                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >Experience/Education</a
+              <NuxtLink
+                to="/experience"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Experience/Education</NuxtLink
               >
-              <a
-                href="#"
-                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >Projects</a
+              <NuxtLink
+                to="/projects"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Projects</NuxtLink
               >
-              <a
-                href="#"
-                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >Contact</a
+              <NuxtLink
+                to="/contact"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Contact</NuxtLink
               >
-              <a
-                href="#"
-                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >Admin Area</a
+              <NuxtLink
+                to="/admin"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Admin Area</NuxtLink
               >
             </div>
           </div>
@@ -91,42 +95,65 @@
           class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
         >
           <div class="relative ml-3">
-            <div>
+            <NuxtLink to="/">
               <img
-                class="h-8 w-8 rounded-full"
+                class="h-8 w-8 rounded-full border-2 border-gray-500 hover:scale-110 transform transition duration-300"
                 src="../assets/images/mukeshphoto.jpg"
-                alt=""
+                alt="Mukesh's Photo"
               />
-            </div>
+            </NuxtLink>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="sm:hidden" id="mobile-menu">
+    <!-- Mobile menu -->
+    <div
+      class="sm:hidden"
+      id="mobile-menu"
+      :class="isMobileMenuOpen ? 'block' : 'hidden'"
+    >
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <a
-          href="#"
-          class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
-          aria-current="page"
-          >About</a
+        <NuxtLink
+          to="/about"
+          @click="toggleMobileMenu"
+          class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-gray-700 transition duration-300"
+          >About</NuxtLink
         >
-        <a
-          href="#"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-          >Experience/Education</a
+        <NuxtLink
+          to="/experience"
+          @click="toggleMobileMenu"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition duration-300"
+          >Experience/Education</NuxtLink
         >
-        <a
-          href="#"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-          >Projects</a
+        <NuxtLink
+          to="/projects"
+          @click="toggleMobileMenu"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition duration-300"
+          >Projects</NuxtLink
         >
-        <a
-          href="#"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-          >Contact</a
+        <NuxtLink
+          to="/contact"
+          @click="toggleMobileMenu"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition duration-300"
+          >Contact</NuxtLink
         >
       </div>
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isMobileMenuOpen: false,
+    };
+  },
+  methods: {
+    toggleMobileMenu() {
+      this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    },
+  },
+};
+</script>
