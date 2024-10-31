@@ -3,7 +3,9 @@
     class="flex items-center justify-center min-h-screen bg-gray-100 text-gray-800"
   >
     <div class="max-w-2xl p-8 text-center">
-      <h1 class="text-5xl md:text-6xl font-bold leading-tight animate-fadeInUp">
+      <h1
+        class="text-5xl lg:text-5xl md:text-4xl sm:text-4xl font-bold leading-tight animate-fadeInUp"
+      >
         Hi, I'm Mukesh Kumar
       </h1>
       <p class="mt-4 text-lg md:text-xl animate-fadeInUp delay-150">
@@ -48,7 +50,7 @@
 
 <script setup>
 useHead({
-  title: "Mukesh Kumar | Full Stack Developer",
+  title: "Mukesh Kumar | Full Stack Developer | Home",
   meta: [
     {
       name: "description",

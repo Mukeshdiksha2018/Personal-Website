@@ -1,6 +1,6 @@
 <template>
   <section
-    class="py-4 px-4 md:px-20 lg:px-32 max-w-screen-lg mx-auto bg-gray-100 animate-fadeIn"
+    class="w-full py-4 px-4 md:px-20 lg:px-32 bg-gray-100 animate-fadeIn"
   >
     <div class="text-center mb-6">
       <h1
@@ -8,22 +8,29 @@
       >
         About Me
       </h1>
-      <p class="mt-2 text-gray-700 dark:text-gray-300 max-w-xl mx-auto">
-        Hi, I’m Akkala Sai Mukesh Kumar, and I specialize in crafting modern,
-        scalable web applications.
+      <p class="mt-2 text-gray-700 dark:text-gray-300 max-w-4xl mx-auto">
+        Hi, I’m <span class="highlight">Akkala Sai Mukesh Kumar</span>, and I
+        specialize in crafting modern, scalable web applications.
       </p>
     </div>
 
     <div
-      class="overflow-y-auto max-h-[70vh] space-y-8 text-gray-700 dark:text-gray-300"
+      class="overflow-y-auto max-h-[57vh] space-y-8 text-gray-700 dark:text-gray-300"
     >
       <!-- Introduction -->
       <p>
-        I am a Full Stack Developer with a passion for building high-quality,
-        user-centered applications using the latest front-end and back-end
-        technologies, including Nuxt, Vue, React, Redux, Pinia, JavaScript,
-        Node.js, MongoDB, and Firebase. I’m based in Hyderabad, India, and
-        dedicated to transforming data into actionable insights.
+        I am a <span class="highlight">Full Stack Developer</span> with a
+        passion for building high-quality, user-centered applications using the
+        latest front-end and back-end technologies, including
+        <span class="highlight">Nuxt</span>, <span class="highlight">Vue</span>,
+        <span class="highlight">React</span>,
+        <span class="highlight">Redux</span>,
+        <span class="highlight">Pinia</span>,
+        <span class="highlight">JavaScript</span>,
+        <span class="highlight">Node.js</span>,
+        <span class="highlight">MongoDB</span>, and
+        <span class="highlight">Firebase</span>. I’m based in Hyderabad, India,
+        and dedicated to transforming data into actionable insights.
       </p>
 
       <!-- Specializations Section -->
@@ -33,18 +40,20 @@
         </h2>
         <ul class="list-disc list-inside mt-4 space-y-2">
           <li>
-            <strong>Full Stack Web Development:</strong> Building responsive,
-            dynamic applications using modern JavaScript frameworks and
-            libraries.
+            <strong class="highlight">Full Stack Web Development:</strong>
+            Building responsive, dynamic applications using modern JavaScript
+            frameworks and libraries.
           </li>
           <li>
-            <strong>Business Intelligence & Data Analytics:</strong>
-            Implementing Power BI solutions to create actionable insights and
-            interactive dashboards.
+            <strong class="highlight"
+              >Business Intelligence & Data Analytics:</strong
+            >
+            Implementing <span class="highlight">Power BI</span> solutions to
+            create actionable insights and interactive dashboards.
           </li>
           <li>
-            <strong>Scalable Solutions Architecture:</strong> Developing robust
-            systems that evolve with business needs.
+            <strong class="highlight">Scalable Solutions Architecture:</strong>
+            Developing robust systems that evolve with business needs.
           </li>
         </ul>
       </div>
@@ -63,11 +72,10 @@
       </div>
     </div>
 
-    <!-- Sticky Get in Touch Button at the bottom of the component -->
     <div class="sticky bottom-0 bg-white dark:bg-gray-800 py-4 text-center">
       <NuxtLink
         to="/contact"
-        class="inline-block px-6 py-3 text-lg font-semibold text-teal-500 bg-white rounded-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105"
+        class="inline-block px-6 py-3 text-lg font-semibold text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition duration-300 transform hover:scale-105"
       >
         Get in Touch
       </NuxtLink>
@@ -116,5 +124,9 @@ useHead({
 
 .animate-fadeIn {
   animation: fadeIn 0.8s ease-out forwards;
+}
+
+.highlight {
+  color: #14b8a6; /* Teal color */
 }
 </style>
