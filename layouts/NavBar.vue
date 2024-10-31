@@ -9,7 +9,7 @@
           <button
             @click="toggleMobileMenu"
             type="button"
-            class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-300 ease-in-out"
+            class="menu-button"
             aria-controls="mobile-menu"
             :aria-expanded="isMobileMenuOpen"
           >
@@ -17,7 +17,7 @@
             <!-- Icon when menu is closed -->
             <svg
               v-if="!isMobileMenuOpen"
-              class="block h-6 w-6"
+              class="icon"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
@@ -33,7 +33,7 @@
             <!-- Icon when menu is open -->
             <svg
               v-if="isMobileMenuOpen"
-              class="block h-6 w-6"
+              class="icon"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
@@ -64,28 +64,33 @@
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <NuxtLink
+                to="/home"
+                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Home</NuxtLink
+              >
+              <NuxtLink
                 to="/about"
-                class="text-white hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >About</NuxtLink
               >
               <NuxtLink
                 to="/experience"
-                class="text-white hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >Experience/Education</NuxtLink
               >
               <NuxtLink
                 to="/projects"
-                class="text-white hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >Projects</NuxtLink
               >
               <NuxtLink
                 to="/contact"
-                class="text-white hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >Contact</NuxtLink
               >
               <NuxtLink
                 to="/admin"
-                class="text-white hover:bg-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >Admin Area</NuxtLink
               >
             </div>
@@ -115,27 +120,33 @@
     >
       <div class="space-y-1 px-2 pb-3 pt-2">
         <NuxtLink
+          to="/home"
+          @click="toggleMobileMenu"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
+          >Home</NuxtLink
+        >
+        <NuxtLink
           to="/about"
           @click="toggleMobileMenu"
-          class="block rounded-md bg-teal-500 px-3 py-2 text-base font-medium text-white hover:bg-teal-600 transition duration-300"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
           >About</NuxtLink
         >
         <NuxtLink
           to="/experience"
           @click="toggleMobileMenu"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-teal-600 hover:text-white transition duration-300"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
           >Experience/Education</NuxtLink
         >
         <NuxtLink
           to="/projects"
           @click="toggleMobileMenu"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-teal-600 hover:text-white transition duration-300"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
           >Projects</NuxtLink
         >
         <NuxtLink
           to="/contact"
           @click="toggleMobileMenu"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-teal-600 hover:text-white transition duration-300"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
           >Contact</NuxtLink
         >
       </div>
@@ -170,5 +181,33 @@ export default {
 .slide-fade-leave-to {
   opacity: 0;
   transform: translateY(-10px);
+}
+
+.menu-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: white; /* teal-600 */
+  color: black;
+  border-radius: 0.375rem; /* rounded-md */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+
+.menu-button:hover,
+.menu-button:active {
+  background-color: rgb(238, 238, 238);
+  color: black;
+}
+
+.menu-button:focus {
+  box-shadow: 0 0 0 2px white inset;
+}
+
+.icon {
+  height: 1.5rem; /* h-6 */
+  width: 1.5rem; /* w-6 */
 }
 </style>
