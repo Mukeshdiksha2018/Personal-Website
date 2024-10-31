@@ -1,51 +1,83 @@
 <template>
   <section
-    class="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 text-white"
+    class="flex items-center justify-center min-h-screen bg-gray-100 text-gray-800"
   >
     <div class="max-w-2xl p-8 text-center">
-      <h1
-        class="text-4xl md:text-5xl font-bold leading-tight opacity-0 translate-y-10 animate-fadeInUp"
-      >
+      <h1 class="text-5xl md:text-6xl font-bold leading-tight animate-fadeInUp">
         Hi, I'm Mukesh Kumar
       </h1>
-      <p
-        class="mt-4 text-lg md:text-xl opacity-0 translate-y-10 animate-fadeInUp delay-150"
-      >
+      <p class="mt-4 text-lg md:text-xl animate-fadeInUp delay-150">
         I am a
-        <span class="font-semibold">Full Stack Developer</span> specializing in
-        building scalable web applications with modern technologies, including
-        <span class="font-semibold"> Nuxt</span>,
-        <span class="font-semibold">Vue</span>,
-        <span class="font-semibold">JavaScript</span>,
-        <span class="font-semibold">Node.js</span>,
-        <span class="font-semibold">MongoDB</span>, and
-        <span class="font-semibold">Firebase</span>. I also have expertise in
-        <span class="font-semibold">Power BI development</span>, serving as a
-        <span class="font-semibold">Power BI Architect</span> and
-        <span class="font-semibold"> Business Intelligence Manager</span>.
+        <span class="font-semibold text-teal-500">Full Stack Developer</span>
+        specializing in building scalable web applications with modern
+        technologies, including
+        <span class="font-semibold text-teal-500"> Nuxt</span>,
+        <span class="font-semibold text-teal-500"> Vue</span>,
+        <span class="font-semibold text-teal-500"> React</span>,
+        <span class="font-semibold text-teal-500"> Redux</span>,
+        <span class="font-semibold text-teal-500"> Pinia</span>,
+        <span class="font-semibold text-teal-500"> JavaScript</span>,
+        <span class="font-semibold text-teal-500"> Node.js</span>,
+        <span class="font-semibold text-teal-500"> MongoDB</span>, and
+        <span class="font-semibold text-teal-500"> Firebase</span>. I also have
+        expertise in
+        <span class="font-semibold text-teal-500"> Power BI development</span>,
+        serving as a
+        <span class="font-semibold text-teal-500"> Power BI Architect</span> and
+        <span class="font-semibold text-teal-500">
+          Business Intelligence Manager</span
+        >.
       </p>
-      <p
-        class="mt-4 text-lg md:text-xl opacity-0 translate-y-10 animate-fadeInUp delay-300"
-      >
-        Based in <span class="font-semibold">Hyderabad, India</span>, I am
+      <p class="mt-4 text-lg md:text-xl animate-fadeInUp delay-300">
+        Based in
+        <span class="font-semibold text-teal-500">Hyderabad, India</span>, I am
         passionate about transforming data into actionable insights and
-        delivering high-quality solutions.
+        delivering high-quality software solutions.
       </p>
       <div class="mt-6">
-        <a
-          class="inline-block px-6 py-3 text-lg font-semibold text-blue-500 bg-white rounded-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105"
+        <NuxtLink
+          class="inline-block px-6 py-3 text-lg font-semibold text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition duration-300 transform hover:scale-105"
+          to="/Contact"
         >
-          <NuxtLink to="/Contact">Get in Touch</NuxtLink>
-        </a>
+          Get in Touch
+        </NuxtLink>
       </div>
     </div>
   </section>
 </template>
 
-<script>
-export default {
-  name: "HeroSection",
-};
+<script setup>
+useHead({
+  title: "Mukesh Kumar | Full Stack Developer",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Full Stack Developer specializing in scalable web applications with expertise in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.",
+    },
+    {
+      name: "keywords",
+      content:
+        "Full Stack Developer, Mukesh Kumar, Nuxt, Vue, React, Node.js, Power BI, Hyderabad, India, web development, software solutions",
+    },
+    { property: "og:title", content: "Mukesh Kumar | Full Stack Developer" },
+    {
+      property: "og:description",
+      content:
+        "Full Stack Developer specializing in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.",
+    },
+    { property: "og:image", content: "/path-to-image.jpg" },
+    { property: "og:url", content: "https://yourwebsite.com" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "Mukesh Kumar | Full Stack Developer" },
+    {
+      name: "twitter:description",
+      content:
+        "Full Stack Developer specializing in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.",
+    },
+    { name: "twitter:image", content: "/path-to-image.jpg" },
+  ],
+});
 </script>
 
 <style scoped>
