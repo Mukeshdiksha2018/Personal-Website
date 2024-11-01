@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex items-center justify-center bg-gray-100 text-gray-800 container-height px-4 sm:px-6"
+    class="flex items-center justify-center bg-gray-100 text-gray-800 container-height px-4 sm:px-6 animate-fadeInUp"
   >
     <div class="max-w-6xl p-1 sm:p-1 md:p-1">
       <div
@@ -112,6 +112,12 @@ useHead({
     opacity: 0;
     transform: translateY(20px);
   }
+  50%{
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -119,7 +125,7 @@ useHead({
 }
 
 .animate-fadeInUp {
-  animation: fadeInUp 0.6s ease forwards;
+  animation: fadeInUp 1.5s ease forwards;
 }
 
 .delay-150 {
@@ -131,11 +137,11 @@ useHead({
 }
 
 .delay-450 {
-  animation-delay: 450ms;
+  animation-delay: 500ms;
 }
 
 .container-height {
-  height: 90vh;
+  height: 88vh;
 }
 
 @media (max-width: 640px) {

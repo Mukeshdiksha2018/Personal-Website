@@ -1,9 +1,9 @@
 <template>
   <section
-    class="w-full py-4 px-4 md:px-20 lg:px-32 bg-gray-100 animate-fadeIn"
+    class="w-full py-4 px-4 md:px-20 lg:px-32 bg-gray-100 animate-fadeInUp"
   >
     <div
-      class="sticky bottom-0 bg-white dark:bg-gray-800 py-4 text-center mb-7"
+      class="sticky bottom-0 bg-white dark:bg-gray-800 py-4 text-center mb-7 animate-fadeInUp delay-150"
     >
       <h1
         class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-200"
@@ -13,7 +13,7 @@
     </div>
 
     <div
-      class="overflow-y-auto max-h-[57vh] space-y-8 text-gray-700 dark:text-gray-300 mb-9"
+      class="overflow-y-auto max-h-[57vh] space-y-8 text-gray-700 dark:text-gray-300 mb-9 animate-fadeInUp delay-300"
     >
       <!-- Introduction -->
       <p>
@@ -70,7 +70,9 @@
       </div>
     </div>
 
-    <div class="sticky bottom-0 bg-gray-100 dark:bg-gray-800 py-4 text-center">
+    <div
+      class="sticky bottom-0 bg-gray-100 dark:bg-gray-800 py-4 text-center animate-fadeInUp delay-450"
+    >
       <NuxtLink
         to="/contact"
         class="px-6 py-3 text-lg font-semibold text-white bg-purple-700 rounded-lg hover:bg-purple-900 transition duration-300 transform hover:scale-105"
@@ -109,10 +111,16 @@ useHead({
 <style scoped>
 @import "tailwindcss/tailwind.css";
 
-@keyframes fadeIn {
+@keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(20px);
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -120,9 +128,20 @@ useHead({
   }
 }
 
-.animate-fadeIn {
-  height: 90vh;
-  animation: fadeIn 0.8s ease-out forwards;
+.animate-fadeInUp {
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.delay-150 {
+  animation-delay: 150ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-450 {
+  animation-delay: 500ms;
 }
 
 .highlight {
