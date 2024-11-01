@@ -23,7 +23,7 @@
         >
           <img
             class="h-14 w-18"
-            src="~/assets/images/emailicon.png"
+            src="~/assets/images/email-142.png"
             alt="email-logo"
           />
         </a>
