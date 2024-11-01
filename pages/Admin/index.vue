@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900"
+    class="flex items-center justify-center bg-gray-100 dark:bg-gray-900 container-height"
   >
     <div
       class="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md dark:bg-gray-800 animate-fadeIn"
@@ -46,7 +46,7 @@
         <!-- Login Button -->
         <button
           type="submit"
-          class="w-full px-4 py-2 mt-4 font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300 ease-in-out transform hover:scale-105"
+          class="w-full px-4 py-2 mt-4 font-semibold text-white bg-purple-700 rounded-lg hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300 ease-in-out transform hover:scale-105"
         >
           Log In
         </button>
@@ -85,7 +85,7 @@ function handleLogin() {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -95,5 +95,9 @@ function handleLogin() {
 
 .animate-fadeIn {
   animation: fadeIn 0.8s ease-out forwards;
+}
+
+.container-height {
+  height: 90vh;
 }
 </style>

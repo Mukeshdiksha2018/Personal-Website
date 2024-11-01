@@ -2,20 +2,18 @@
   <section
     class="w-full py-4 px-4 md:px-20 lg:px-32 bg-gray-100 animate-fadeIn"
   >
-    <div class="text-center mb-6">
+    <div
+      class="sticky bottom-0 bg-white dark:bg-gray-800 py-4 text-center mb-7"
+    >
       <h1
         class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-200"
       >
         About Me
       </h1>
-      <p class="mt-2 text-gray-700 dark:text-gray-300 max-w-4xl mx-auto">
-        Hi, I’m <span class="highlight">Akkala Sai Mukesh Kumar</span>, and I
-        specialize in crafting modern, scalable web applications.
-      </p>
     </div>
 
     <div
-      class="overflow-y-auto max-h-[57vh] space-y-8 text-gray-700 dark:text-gray-300"
+      class="overflow-y-auto max-h-[57vh] space-y-8 text-gray-700 dark:text-gray-300 mb-9"
     >
       <!-- Introduction -->
       <p>
@@ -72,10 +70,10 @@
       </div>
     </div>
 
-    <div class="sticky bottom-0 bg-white dark:bg-gray-800 py-4 text-center">
+    <div class="sticky bottom-0 bg-gray-100 dark:bg-gray-800 py-4 text-center">
       <NuxtLink
         to="/contact"
-        class="inline-block px-6 py-3 text-lg font-semibold text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition duration-300 transform hover:scale-105"
+        class="px-6 py-3 text-lg font-semibold text-white bg-purple-700 rounded-lg hover:bg-purple-900 transition duration-300 transform hover:scale-105"
       >
         Get in Touch
       </NuxtLink>
@@ -112,21 +110,22 @@ useHead({
 @import "tailwindcss/tailwind.css";
 
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 .animate-fadeIn {
+  height: 90vh;
   animation: fadeIn 0.8s ease-out forwards;
 }
 
 .highlight {
-  color: #14b8a6; /* Teal color */
+  color: #14b8a6;
 }
 </style>

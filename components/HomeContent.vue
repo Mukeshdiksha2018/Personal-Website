@@ -1,47 +1,71 @@
 <template>
   <section
-    class="flex items-center justify-center min-h-screen bg-gray-100 text-gray-800"
+    class="flex items-center justify-center bg-gray-100 text-gray-800 container-height px-4 sm:px-6"
   >
-    <div class="max-w-2xl p-8 text-center">
-      <h1
-        class="text-5xl lg:text-5xl md:text-4xl sm:text-4xl font-bold leading-tight animate-fadeInUp"
+    <div class="max-w-6xl p-1 sm:p-1 md:p-1">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 text-center md:text-left mb-20 md:mb-28"
       >
-        Hi, I'm Mukesh Kumar
-      </h1>
-      <p class="mt-4 text-lg md:text-xl animate-fadeInUp delay-150">
-        I am a
-        <span class="font-semibold text-teal-500">Full Stack Developer</span>
-        specializing in building scalable web applications with modern
-        technologies, including
-        <span class="font-semibold text-teal-500"> Nuxt</span>,
-        <span class="font-semibold text-teal-500"> Vue</span>,
-        <span class="font-semibold text-teal-500"> React</span>,
-        <span class="font-semibold text-teal-500"> Redux</span>,
-        <span class="font-semibold text-teal-500"> Pinia</span>,
-        <span class="font-semibold text-teal-500"> JavaScript</span>,
-        <span class="font-semibold text-teal-500"> Node.js</span>,
-        <span class="font-semibold text-teal-500"> MongoDB</span>, and
-        <span class="font-semibold text-teal-500"> Firebase</span>. I also have
-        expertise in
-        <span class="font-semibold text-teal-500"> Power BI development</span>,
-        serving as a
-        <span class="font-semibold text-teal-500"> Power BI Architect</span> and
-        <span class="font-semibold text-teal-500">
-          Business Intelligence Manager</span
-        >.
-      </p>
-      <p class="mt-4 text-lg md:text-xl animate-fadeInUp delay-300">
-        Based in
-        <span class="font-semibold text-teal-500">Hyderabad, India</span>, I am
-        passionate about transforming data into actionable insights and
-        delivering high-quality software solutions.
-      </p>
-      <div class="mt-6">
+        <!-- Left Column: Name -->
+        <div class="animate-fadeInUp">
+          <h1 class="text-4xl sm:text-6xl font-bold leading-tight">
+            Hi, I'm <br>Mukesh Kumar</br>
+          </h1>
+        </div>
+
+        <!-- Right Column: Description -->
+        <div>
+          <p
+            class="text-base sm:text-lg mt-4 md:mt-0 animate-fadeInUp delay-150"
+          >
+            I am a
+            <span class="font-semibold text-teal-500"
+              >Full Stack Developer</span
+            >
+            specializing in building scalable web applications with modern
+            technologies, including
+            <span class="font-semibold text-teal-500"> Nuxt</span>,
+            <span class="font-semibold text-teal-500"> Vue</span>,
+            <span class="font-semibold text-teal-500"> React</span>,
+            <span class="font-semibold text-teal-500"> Redux</span>,
+            <span class="font-semibold text-teal-500"> Pinia</span>,
+            <span class="font-semibold text-teal-500"> JavaScript</span>,
+            <span class="font-semibold text-teal-500"> Node.js</span>,
+            <span class="font-semibold text-teal-500"> MongoDB</span>, and
+            <span class="font-semibold text-teal-500"> Firebase</span>. I also
+            have expertise in
+            <span class="font-semibold text-teal-500">
+              Power BI development</span
+            >, serving as a
+            <span class="font-semibold text-teal-500"> Power BI Architect</span>
+            and
+            <span class="font-semibold text-teal-500">
+              Business Intelligence Manager</span
+            >.
+          </p>
+          <p class="text-base sm:text-lg mt-4 animate-fadeInUp delay-300">
+            Based in
+            <span class="font-semibold text-teal-500">Hyderabad, India</span>, I
+            am passionate about transforming data into actionable insights and
+            delivering high-quality software solutions.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fadeInUp delay-450"
+      >
         <NuxtLink
-          class="inline-block px-6 py-3 text-lg font-semibold text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition duration-300 transform hover:scale-105"
+          class="button-center-mobile px-6 py-3 text-lg font-semibold text-white bg-purple-700 rounded-lg hover:bg-purple-900 transition duration-300 transform hover:scale-105"
           to="/Contact"
         >
           Get in Touch
+        </NuxtLink>
+        <NuxtLink
+          class="button-center-mobile px-6 py-3 text-lg font-semibold text-white bg-slate-500 rounded-lg hover:bg-slate-700 transition duration-300 transform hover:scale-105"
+          to="/Projects"
+        >
+          Projects
         </NuxtLink>
       </div>
     </div>
@@ -104,5 +128,21 @@ useHead({
 
 .delay-300 {
   animation-delay: 300ms;
+}
+
+.delay-450 {
+  animation-delay: 450ms;
+}
+
+.container-height {
+  height: 90vh;
+}
+
+@media (max-width: 640px) {
+  .button-center-mobile {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 </style>

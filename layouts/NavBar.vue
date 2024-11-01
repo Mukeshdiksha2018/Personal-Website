@@ -135,7 +135,7 @@
           to="/experience"
           @click="toggleMobileMenu"
           class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
-          >Experience/Education</NuxtLink
+          >Experience | Education</NuxtLink
         >
         <NuxtLink
           to="/projects"
@@ -189,9 +189,9 @@ export default {
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  background-color: white; /* teal-600 */
+  background-color: white;
   color: black;
-  border-radius: 0.375rem; /* rounded-md */
+  border-radius: 0.375rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   outline: none;
 }
@@ -207,7 +207,7 @@ export default {
 }
 
 .icon {
-  height: 1.5rem; /* h-6 */
-  width: 1.5rem; /* w-6 */
+  height: 1.5rem;
+  width: 1.5rem;
 }
 </style>
