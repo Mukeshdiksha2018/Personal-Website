@@ -4,7 +4,7 @@
   >
     <div class="max-w-6xl p-1 sm:p-1 md:p-1">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 text-center md:text-left mb-20 md:mb-28"
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 text-center md:text-left mb-3 md:mb-28"
       >
         <!-- Left Column: Name -->
         <div class="animate-fadeInUp">
@@ -53,7 +53,7 @@
       </div>
 
       <div
-        class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fadeInUp delay-450"
+        class="mt-1 sm:mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fadeInUp delay-450"
       >
         <NuxtLink
           class="button-center-mobile px-6 py-3 text-lg font-semibold text-white bg-purple-700 rounded-lg hover:bg-purple-900 transition duration-300 transform hover:scale-105"
