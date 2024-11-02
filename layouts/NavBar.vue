@@ -1,7 +1,5 @@
 <template>
-  <nav
-    class="bg-gradient-to-r from-blue-500 to-teal-400 shadow-lg sticky top-0 z-50"
-  >
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <!-- Mobile menu button -->
@@ -65,32 +63,32 @@
             <div class="flex space-x-4">
               <NuxtLink
                 to="/home"
-                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-black hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >Home</NuxtLink
               >
               <NuxtLink
                 to="/about"
-                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-black hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >About</NuxtLink
               >
               <NuxtLink
                 to="/experience"
-                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-black hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >Experience/Education</NuxtLink
               >
               <NuxtLink
                 to="/projects"
-                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-black hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >Projects</NuxtLink
               >
               <NuxtLink
                 to="/contact"
-                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-black hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >Contact</NuxtLink
               >
               <NuxtLink
                 to="/admin"
-                class="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                class="text-black hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >Admin Area</NuxtLink
               >
             </div>
@@ -102,7 +100,7 @@
           <div class="relative ml-3">
             <NuxtLink to="/">
               <img
-                class="h-8 w-8 rounded-full border-2 border-teal-300 hover:scale-110 transform transition duration-300"
+                class="h-8 w-8 rounded-full border-2 border-purple-700 hover:scale-110 transform transition duration-300"
                 src="../assets/images/mukeshphoto.jpg"
                 alt="Mukesh's Photo"
               />
@@ -122,31 +120,31 @@
         <NuxtLink
           to="/home"
           @click="toggleMobileMenu"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
+          class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-purple-700 hover:text-white transition duration-300"
           >Home</NuxtLink
         >
         <NuxtLink
           to="/about"
           @click="toggleMobileMenu"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
+          class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-purple-700 hover:text-white transition duration-300"
           >About</NuxtLink
         >
         <NuxtLink
           to="/experience"
           @click="toggleMobileMenu"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
+          class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-purple-700 hover:text-white transition duration-300"
           >Experience | Education</NuxtLink
         >
         <NuxtLink
           to="/projects"
           @click="toggleMobileMenu"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
+          class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-purple-700 hover:text-white transition duration-300"
           >Projects</NuxtLink
         >
         <NuxtLink
           to="/contact"
           @click="toggleMobileMenu"
-          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white hover:text-black transition duration-300"
+          class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-purple-700 hover:text-white transition duration-300"
           >Contact</NuxtLink
         >
       </div>

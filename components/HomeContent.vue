@@ -8,8 +8,12 @@
       >
         <!-- Left Column: Name -->
         <div class="animate-fadeInUp">
-          <h1 class="text-4xl sm:text-6xl font-bold leading-tight">
-            Hi, I'm <br>Mukesh Kumar</br>
+          <h1 class="text-4xl sm:text-6xl font-bold leading-tight">Hi, I'm</h1>
+          <br></br>
+          <h1
+            class="text-4xl sm:text-6xl font-bold leading-tight text-purple-700"
+          >
+            Mukesh Kumar
           </h1>
         </div>
 
@@ -112,7 +116,7 @@ useHead({
     opacity: 0;
     transform: translateY(20px);
   }
-  50%{
+  50% {
     opacity: 0;
   }
   75% {
