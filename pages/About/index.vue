@@ -71,11 +71,11 @@
     </div>
 
     <div
-      class="sticky bottom-0 bg-gray-100 dark:bg-gray-800 py-4 text-center animate-fadeInUp delay-450"
+      class="sticky bottom-0 bg-gray-100 dark:bg-gray-800 py-1 text-center animate-fadeInUp delay-450"
     >
       <NuxtLink
         to="/contact"
-        class="px-6 py-3 text-lg font-semibold text-white bg-purple-700 rounded-lg hover:bg-purple-900 transition duration-300 transform hover:scale-105"
+        class="px-5 py-2 text-lg font-semibold text-white bg-purple-700 rounded-lg hover:bg-purple-900 transition duration-300 transform hover:scale-105"
       >
         Get in Touch
       </NuxtLink>
