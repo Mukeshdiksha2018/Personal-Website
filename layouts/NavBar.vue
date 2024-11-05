@@ -100,7 +100,7 @@
           <div class="relative ml-3">
             <NuxtLink to="/">
               <img
-                class="h-8 w-8 rounded-full border-2 border-purple-700 hover:scale-110 transform transition duration-300"
+                class="h-8 w-8 rounded-full border-2 border-purple-700 hover:scale-150 transform transition duration-300"
                 src="../assets/images/mukeshphoto.jpg"
                 alt="Mukesh's Photo"
               />
