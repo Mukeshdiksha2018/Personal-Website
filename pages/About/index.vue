@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full py-4 px-4 md:px-20 lg:px-32 bg-gray-100 animate-fadeInUp"
+    class="w-full py-4 px-4 md:px-20 lg:px-32 bg-gray-100 animate-fadeInUp container-height"
   >
     <div
       class="sticky bottom-0 bg-white dark:bg-gray-800 py-4 text-center mb-7 animate-fadeInUp delay-150"
@@ -146,5 +146,9 @@ useHead({
 
 .highlight {
   color: #14b8a6;
+}
+
+.container-height {
+  height: 90vh;
 }
 </style>
