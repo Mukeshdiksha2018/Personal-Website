@@ -9,7 +9,7 @@
         <!-- Left Column: Name -->
         <div class="animate-fadeInUp">
           <h1 class="text-4xl sm:text-6xl font-bold leading-tight">Hi, I'm</h1>
-          <br></br>
+          <br />
           <h1
             class="text-4xl sm:text-6xl font-bold leading-tight text-purple-700"
           >
@@ -38,13 +38,12 @@
             <span class="font-semibold text-teal-500"> MongoDB</span>, and
             <span class="font-semibold text-teal-500"> Firebase</span>. I also
             have expertise in
-            <span class="font-semibold text-teal-500">
-              Power BI development</span
+            <span class="font-semibold text-teal-500">Power BI development</span
             >, serving as a
-            <span class="font-semibold text-teal-500"> Power BI Architect</span>
+            <span class="font-semibold text-teal-500">Power BI Architect</span>
             and
-            <span class="font-semibold text-teal-500">
-              Business Intelligence Manager</span
+            <span class="font-semibold text-teal-500"
+              >Business Intelligence Manager</span
             >.
           </p>
           <p class="text-base sm:text-lg mt-4 animate-fadeInUp delay-300">
@@ -73,10 +72,30 @@
         </NuxtLink>
       </div>
     </div>
+
+    <!-- Toast Notification -->
+    <div
+      v-if="showToast"
+      class="fixed bottom-5 right-5 px-8 py-4 bg-purple-700 text-white text-2xl font-bold rounded-lg shadow-lg z-50 animate-bounce"
+    >
+      Built using Nuxt 3 🚀
+    </div>
   </section>
 </template>
 
 <script setup>
+import { ref, onMounted } from "vue";
+
+const showToast = ref(false);
+
+onMounted(() => {
+  showToast.value = true;
+  // Hide the toast after 5 seconds
+  setTimeout(() => {
+    showToast.value = false;
+  }, 5000);
+});
+
 useHead({
   title: "Mukesh Kumar | Full Stack Developer | Home",
   meta: [
