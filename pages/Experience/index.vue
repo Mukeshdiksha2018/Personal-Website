@@ -3,7 +3,9 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Work Experience -->
       <div class="card">
-        <h3 class="text-center text-lg font-bold mb-4">Work Experience</h3>
+        <h3 class="text-center text-purple-700 text-lg font-bold mb-4">
+          Work Experience
+        </h3>
         <div class="space-y-4">
           <div
             v-for="(job, index) in workExperience"
@@ -21,7 +23,9 @@
 
       <!-- Education -->
       <div class="card">
-        <h3 class="text-center text-lg font-bold mb-4">Education</h3>
+        <h3 class="text-center text-purple-700 text-lg font-bold mb-4">
+          Education
+        </h3>
         <div class="space-y-4">
           <div
             v-for="(education, index) in educationHistory"
@@ -41,7 +45,9 @@
 
       <!-- Skills -->
       <div class="card">
-        <h3 class="text-center text-lg font-bold mb-4">Skills</h3>
+        <h3 class="text-center text-purple-700 text-lg font-bold mb-4">
+          Skills
+        </h3>
         <div class="flex flex-wrap gap-2 mt-4">
           <span
             v-for="(skill, index) in skills"
@@ -63,55 +69,55 @@ export default {
     return {
       workExperience: [
         {
-          company: "Hallmark Global Technologies PVT LTD",
-          position: "Software Engineer",
-          period: "Nov 2021 - Currently working..",
+          company: 'Hallmark Global Technologies PVT LTD',
+          position: 'Software Engineer',
+          period: 'Nov 2021 - Currently working..',
           description:
-            "Developing a no-code platform and document signing system using Vue.js and Nuxt.js. My responsibilities include actively participating in code reviews, debugging and developing new functionalities.",
+            'Developing a no-code platform and document signing system using Vue.js and Nuxt.js. My responsibilities include actively participating in code reviews, debugging and developing new functionalities.',
         },
         {
-          company: "Lavu INC",
-          position: "Configuration & On-boarding Executive",
-          period: "Jan 2020 - Nov 2021",
+          company: 'Lavu INC',
+          position: 'Configuration & On-boarding Executive',
+          period: 'Jan 2020 - Nov 2021',
           description:
-            "Worked on configuration and onboarding clients for this restaurant POS service provider",
+            'Worked on configuration and onboarding clients for this restaurant POS service provider',
         },
         {
-          company: "Genpact",
-          position: "Collections Executive",
-          period: "Nov 2018 - Aug 2019",
+          company: 'Genpact',
+          position: 'Collections Executive',
+          period: 'Nov 2018 - Aug 2019',
           description:
-            "Did credit card collections for Synchrony, which is a leading financial institution in USA",
+            'Did credit card collections for Synchrony, which is a leading financial institution in USA',
         },
         {
-          company: "Concentrix",
-          position: "Customer Service Representative",
-          period: "Mar 2017 - May 2018",
-          description: "Worked here as a customer service executive.",
+          company: 'Concentrix',
+          position: 'Customer Service Representative',
+          period: 'Mar 2017 - May 2018',
+          description: 'Worked here as a customer service executive.',
         },
       ],
       educationHistory: [
         {
-          institution: "Manipal University Jaipur",
-          degree: "Bachelor of Computer Applications",
-          period: "2021 - 2024",
-          details: "Specialized in web development and software engineering.",
+          institution: 'Manipal University Jaipur',
+          degree: 'Bachelor of Computer Applications',
+          period: '2021 - 2024',
+          details: 'Specialized in web development and software engineering.',
         },
         {
-          institution: "Narayana Junior College",
-          degree: "Maths, Physics & Chemistry",
-          period: "2010 - 2012",
+          institution: 'Narayana Junior College',
+          degree: 'Maths, Physics & Chemistry',
+          period: '2010 - 2012',
         },
       ],
       skills: [
-        "Vue.js",
-        "Nuxt.js",
-        "JavaScript",
-        "TypeScript",
-        "HTML5",
-        "CSS3",
-        "Tailwind CSS",
-        "Axios",
+        'Vue.js',
+        'Nuxt.js',
+        'JavaScript',
+        'TypeScript',
+        'HTML5',
+        'CSS3',
+        'Tailwind CSS',
+        'Axios',
       ],
     };
   },
