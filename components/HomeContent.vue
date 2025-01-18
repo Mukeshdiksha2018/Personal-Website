@@ -35,16 +35,7 @@
             <span class="font-semibold text-teal-500"> Pinia</span>,
             <span class="font-semibold text-teal-500"> JavaScript</span>,
             <span class="font-semibold text-teal-500"> Node.js</span>,
-            <span class="font-semibold text-teal-500"> MongoDB</span>, and
-            <span class="font-semibold text-teal-500"> Firebase</span>. I also
-            have expertise in
-            <span class="font-semibold text-teal-500">Power BI development</span
-            >, serving as a
-            <span class="font-semibold text-teal-500">Power BI Architect</span>
-            and
-            <span class="font-semibold text-teal-500"
-              >Business Intelligence Manager</span
-            >.
+            <span class="font-semibold text-teal-500"> MongoDB</span>
           </p>
           <p class="text-base sm:text-lg mt-4 animate-fadeInUp delay-300">
             Based in
@@ -72,59 +63,43 @@
         </NuxtLink>
       </div>
     </div>
-
-    <!-- Toast Notification -->
-    <div
-      v-if="showToast"
-      class="fixed bottom-5 right-5 px-8 py-4 bg-purple-700 text-white text-2xl font-bold rounded-lg shadow-lg z-50 animate-bounce"
-    >
-      Built using Nuxt 3 🚀
-    </div>
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted } from 'vue';
 
-const showToast = ref(false);
-
-onMounted(() => {
-  showToast.value = true;
-  // Hide the toast after 5 seconds
-  setTimeout(() => {
-    showToast.value = false;
-  }, 5000);
-});
+onMounted(() => {});
 
 useHead({
-  title: "Mukesh Kumar | Full Stack Developer | Home",
+  title: 'Mukesh Kumar | Full Stack Developer | Home',
   meta: [
     {
-      name: "description",
+      name: 'description',
       content:
-        "Full Stack Developer specializing in scalable web applications with expertise in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.",
+        'Full Stack Developer specializing in scalable web applications with expertise in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.',
     },
     {
-      name: "keywords",
+      name: 'keywords',
       content:
-        "Full Stack Developer, Mukesh Kumar, Nuxt, Vue, React, Node.js, Power BI, Hyderabad, India, web development, software solutions",
+        'Full Stack Developer, Mukesh Kumar, Nuxt, Vue, React, Node.js, Power BI, Hyderabad, India, web development, software solutions',
     },
-    { property: "og:title", content: "Mukesh Kumar | Full Stack Developer" },
+    { property: 'og:title', content: 'Mukesh Kumar | Full Stack Developer' },
     {
-      property: "og:description",
+      property: 'og:description',
       content:
-        "Full Stack Developer specializing in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.",
+        'Full Stack Developer specializing in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.',
     },
-    { property: "og:image", content: "/path-to-image.jpg" },
-    { property: "og:url", content: "https://yourwebsite.com" },
-    { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: "Mukesh Kumar | Full Stack Developer" },
+    { property: 'og:image', content: '/path-to-image.jpg' },
+    { property: 'og:url', content: 'https://yourwebsite.com' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Mukesh Kumar | Full Stack Developer' },
     {
-      name: "twitter:description",
+      name: 'twitter:description',
       content:
-        "Full Stack Developer specializing in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.",
+        'Full Stack Developer specializing in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.',
     },
-    { name: "twitter:image", content: "/path-to-image.jpg" },
+    { name: 'twitter:image', content: '/path-to-image.jpg' },
   ],
 });
 </script>
@@ -164,7 +139,7 @@ useHead({
 }
 
 .container-height {
-  height: 88vh;
+  height: 90vh;
 }
 
 @media (max-width: 640px) {
