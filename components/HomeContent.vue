@@ -8,7 +8,9 @@
       >
         <!-- Left Column: Name -->
         <div class="animate-fadeInUp">
-          <h1 class="text-4xl sm:text-6xl font-bold leading-tight">Hi, I'm</h1>
+          <span class="text-4xl sm:text-6xl font-bold leading-tight"
+            >Hi, I'm</span
+          >
           <br />
           <h1
             class="text-4xl sm:text-6xl font-bold leading-tight text-purple-700"
@@ -18,8 +20,8 @@
         </div>
 
         <!-- Right Column: Description -->
-        <div>
-          <p
+        <h1>
+          <span
             class="text-base sm:text-lg mt-4 md:mt-0 animate-fadeInUp delay-150"
           >
             I am a
@@ -36,14 +38,14 @@
             <span class="font-semibold text-teal-500"> JavaScript</span>,
             <span class="font-semibold text-teal-500"> Node.js</span>,
             <span class="font-semibold text-teal-500"> MongoDB</span>
-          </p>
+          </span>
           <p class="text-base sm:text-lg mt-4 animate-fadeInUp delay-300">
             Based in
             <span class="font-semibold text-teal-500">Hyderabad, India</span>, I
             am passionate about transforming data into actionable insights and
             delivering high-quality software solutions.
           </p>
-        </div>
+        </h1>
       </div>
 
       <div
