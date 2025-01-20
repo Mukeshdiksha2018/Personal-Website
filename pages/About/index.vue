@@ -5,11 +5,11 @@
     <div
       class="sticky bottom-0 bg-white dark:bg-gray-800 py-4 text-center mb-7 animate-fadeInUp delay-150"
     >
-      <h1
+      <span
         class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-200"
       >
         About Me
-      </h1>
+      </span>
     </div>
 
     <div
@@ -33,27 +33,31 @@
 
       <!-- Specializations Section -->
       <div>
-        <h2 class="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+        <span class="text-2xl font-semibold text-gray-800 dark:text-gray-200">
           Specializations:
-        </h2>
-        <ul class="list-disc list-inside mt-4 space-y-2">
-          <li>
-            <strong class="highlight">Full Stack Web Development:</strong>
-            Building responsive, dynamic applications using modern JavaScript
-            frameworks and libraries.
-          </li>
-          <li>
-            <strong class="highlight"
-              >Business Intelligence & Data Analytics:</strong
-            >
-            Implementing <span class="highlight">Power BI</span> solutions to
-            create actionable insights and interactive dashboards.
-          </li>
-          <li>
-            <strong class="highlight">Scalable Solutions Architecture:</strong>
-            Developing robust systems that evolve with business needs.
-          </li>
-        </ul>
+        </span>
+        <h1>
+          <ul class="list-disc list-inside mt-4 space-y-2">
+            <li>
+              <strong class="highlight">Full Stack Web Development:</strong>
+              Building responsive, dynamic applications using modern JavaScript
+              frameworks and libraries.
+            </li>
+            <li>
+              <strong class="highlight"
+                >Business Intelligence & Data Analytics:</strong
+              >
+              Implementing <span class="highlight">Power BI</span> solutions to
+              create actionable insights and interactive dashboards.
+            </li>
+            <li>
+              <strong class="highlight"
+                >Scalable Solutions Architecture:</strong
+              >
+              Developing robust systems that evolve with business needs.
+            </li>
+          </ul>
+        </h1>
       </div>
 
       <!-- Freelance & Consulting Section -->
@@ -84,32 +88,32 @@
 </template>
 
 <script setup>
-import { useHead } from "nuxt/app";
+import { useHead } from 'nuxt/app';
 
 useHead({
-  title: "About Mukesh Kumar - Full Stack Developer & Power BI Expert",
+  title: 'About Mukesh Kumar - Full Stack Developer & Power BI Expert',
   meta: [
     {
-      name: "description",
+      name: 'description',
       content:
-        "Learn about Mukesh Kumar, a Full Stack Developer specializing in Nuxt, Vue, React, Node.js, and a Power BI Architect offering freelance consultation services.",
+        'Learn about Mukesh Kumar, a Full Stack Developer specializing in Nuxt, Vue, React, Node.js, and a Power BI Architect offering freelance consultation services.',
     },
     {
-      property: "og:title",
-      content: "About Mukesh Kumar - Full Stack Developer & Power BI Expert",
+      property: 'og:title',
+      content: 'About Mukesh Kumar - Full Stack Developer & Power BI Expert',
     },
     {
-      property: "og:description",
+      property: 'og:description',
       content:
-        "Mukesh Kumar specializes in modern web development and Power BI solutions. Based in Hyderabad, India, and open for freelance consultation.",
+        'Mukesh Kumar specializes in modern web development and Power BI solutions. Based in Hyderabad, India, and open for freelance consultation.',
     },
-    { property: "og:type", content: "website" },
+    { property: 'og:type', content: 'website' },
   ],
 });
 </script>
 
 <style scoped>
-@import "tailwindcss/tailwind.css";
+@import 'tailwindcss/tailwind.css';
 
 @keyframes fadeInUp {
   0% {
