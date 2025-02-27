@@ -17,44 +17,45 @@
     >
       <!-- Introduction -->
       <p>
-        I am a <span class="highlight">Full Stack Developer</span> with a
-        passion for building high-quality, user-centered applications using the
-        latest front-end and back-end technologies, including
-        <span class="highlight">Nuxt</span>, <span class="highlight">Vue</span>,
+        Hi, I’m Akkala Sai Mukesh Kumar, a Full Stack Developer passionate about
+        building high-quality, user-centric applications that blend performance,
+        scalability, and intuitive design. Based in Hyderabad, India, I
+        specialize in <span class="highlight">Vue</span>,
+        <span class="highlight">Nuxt</span>,
         <span class="highlight">React</span>,
-        <span class="highlight">Redux</span>,
-        <span class="highlight">Pinia</span>,
-        <span class="highlight">JavaScript</span>,
-        <span class="highlight">Node.js</span>,
-        <span class="highlight">MongoDB</span>, and
-        <span class="highlight">Firebase</span>. I’m based in Hyderabad, India,
-        and dedicated to transforming data into actionable insights.
+        <span class="highlight">Node.js</span>, and modern JavaScript
+        frameworks, crafting cutting-edge solutions for businesses worldwide.
       </p>
 
       <!-- Specializations Section -->
       <div>
         <span class="text-2xl font-semibold text-gray-800 dark:text-gray-200">
-          Specializations:
+          What I Do..
         </span>
         <h1>
           <ul class="list-disc list-inside mt-4 space-y-2">
             <li>
               <strong class="highlight">Full Stack Web Development:</strong>
-              Building responsive, dynamic applications using modern JavaScript
-              frameworks and libraries.
+              I develop responsive, dynamic, and scalable web applications using
+              frameworks like Vue, Nuxt, React, and Node.js. Whether it’s a
+              sleek front-end UI or a robust back-end API, I focus on delivering
+              seamless experiences.
             </li>
             <li>
               <strong class="highlight"
                 >Business Intelligence & Data Analytics:</strong
               >
-              Implementing <span class="highlight">Power BI</span> solutions to
-              create actionable insights and interactive dashboards.
+              I help businesses transform raw data into meaningful insights with
+              Power BI and interactive dashboards, driving better
+              decision-making.
             </li>
             <li>
               <strong class="highlight"
                 >Scalable Solutions Architecture:</strong
               >
-              Developing robust systems that evolve with business needs.
+              From small startups to growing enterprises, I build modular,
+              future-proof architectures that scale with evolving business
+              needs.
             </li>
           </ul>
         </h1>
@@ -65,12 +66,13 @@
         <h2 class="text-2xl font-semibold text-gray-800 dark:text-gray-200">
           Freelance & Consulting Services
         </h2>
-        <p class="mt-4">
-          I offer freelance consultation services for startups, companies, and
-          individuals seeking to enhance their tech infrastructure or bring
-          innovative projects to life. Let’s work together to achieve your
-          vision!
+        <p class="mt-4 mb-1">
+          As a freelance developer and consultant, I collaborate with startups,
+          businesses, and individuals to bring their ideas to life. Whether it’s
+          building custom web apps, optimizing existing projects, or offering
+          technical guidance, I’m here to help!
         </p>
+        <p>Let’s connect and build something amazing together.</p>
       </div>
     </div>
 
@@ -88,32 +90,38 @@
 </template>
 
 <script setup>
-import { useHead } from 'nuxt/app';
+import { useHead } from "nuxt/app";
 
 useHead({
-  title: 'About Mukesh Kumar - Full Stack Developer & Power BI Expert',
+  title: "About Mukesh Kumar - Full Stack Developer & Power BI Expert",
   meta: [
     {
-      name: 'description',
+      name: "description",
       content:
-        'Learn about Mukesh Kumar, a Full Stack Developer specializing in Nuxt, Vue, React, Node.js, and a Power BI Architect offering freelance consultation services.',
+        "Learn about Mukesh Kumar, a Full Stack Developer specializing in Nuxt, Vue, React, Node.js, and a Power BI Architect offering freelance consultation services.",
     },
     {
-      property: 'og:title',
-      content: 'About Mukesh Kumar - Full Stack Developer & Power BI Expert',
+      name: "keywords",
+      content:
+        "Full Stack Developer, Akkala Sai Mukesh Kumar, Nuxt.js Developer, Vue.js Developer, JavaScript Developer, Frontend Developer, Backend Developer, Web Development, Freelance Developer, Remote Developer, Software Engineer, UI/UX Developer, Custom Web Apps, No-Code Platforms, SaaS Development, API Integration, Node.js Developer, Express.js, MongoDB, Firebase, Tailwind CSS, Element UI, Vuex, Pinia, Nuxt SEO, Hyderabad, India, USA, UK, Canada, Europe, Australia, Web App Development, Hire Vue Developer, Hire Nuxt Developer, Freelance Web Developer",
+    },
+
+    {
+      property: "og:title",
+      content: "About Mukesh Kumar - Full Stack Developer & Power BI Expert",
     },
     {
-      property: 'og:description',
+      property: "og:description",
       content:
-        'Mukesh Kumar specializes in modern web development and Power BI solutions. Based in Hyderabad, India, and open for freelance consultation.',
+        "Mukesh Kumar specializes in modern web development and Power BI solutions. Based in Hyderabad, India, and open for freelance consultation.",
     },
-    { property: 'og:type', content: 'website' },
+    { property: "og:type", content: "website" },
   ],
 });
 </script>
 
 <style scoped>
-@import 'tailwindcss/tailwind.css';
+@import "tailwindcss/tailwind.css";
 
 @keyframes fadeInUp {
   0% {

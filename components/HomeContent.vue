@@ -24,27 +24,19 @@
           <span
             class="text-base sm:text-lg mt-4 md:mt-0 animate-fadeInUp delay-150"
           >
-            I am a
-            <span class="font-semibold text-teal-500"
-              >Full Stack Developer</span
-            >
-            specializing in building scalable web applications with modern
-            technologies, including
-            <span class="font-semibold text-teal-500"> Nuxt</span>,
-            <span class="font-semibold text-teal-500"> Vue</span>,
-            <span class="font-semibold text-teal-500"> React</span>,
-            <span class="font-semibold text-teal-500"> Redux</span>,
-            <span class="font-semibold text-teal-500"> Pinia</span>,
-            <span class="font-semibold text-teal-500"> JavaScript</span>,
-            <span class="font-semibold text-teal-500"> Node.js</span>,
-            <span class="font-semibold text-teal-500"> MongoDB</span>
+            Based in India, I am a passionate Full Stack Software Developer with
+            a strong focus on Vue.js and Nuxt.js. With years of experience in
+            building scalable, no-code, and document-signing platforms, I blend
+            clean design with robust functionality to craft seamless web
+            applications. I take pride in writing efficient, maintainable code
+            and have a keen eye for UI/UX details, ensuring that every project I
+            work on delivers both performance and aesthetics. Whether
+            collaborating with teams or leading development initiatives, I am
+            committed to delivering high-quality, scalable solutions. Beyond
+            client projects, I am constantly exploring new technologies,
+            refining my skills, and working on personal experiments to stay at
+            the forefront of modern web development.
           </span>
-          <p class="text-base sm:text-lg mt-4 animate-fadeInUp delay-300">
-            Based in
-            <span class="font-semibold text-teal-500">Hyderabad, India</span>, I
-            am passionate about transforming data into actionable insights and
-            delivering high-quality software solutions.
-          </p>
         </h1>
       </div>
 
@@ -69,39 +61,39 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 
 onMounted(() => {});
 
 useHead({
-  title: 'Mukesh Kumar | Full Stack Developer | Home',
+  title: "Mukesh Kumar | Full Stack Developer | Home",
   meta: [
     {
-      name: 'description',
+      name: "description",
       content:
-        'Full Stack Developer specializing in scalable web applications with expertise in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.',
+        "Full Stack Developer specializing in scalable web applications with expertise in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.",
     },
     {
-      name: 'keywords',
+      name: "keywords",
       content:
-        'Full Stack Developer, Mukesh Kumar, Nuxt, Vue, React, Node.js, Power BI, Hyderabad, India, web development, software solutions',
+        "Full Stack Developer, Akkala Sai Mukesh Kumar, Nuxt.js Developer, Vue.js Developer, JavaScript Developer, Frontend Developer, Backend Developer, Web Development, Freelance Developer, Remote Developer, Software Engineer, UI/UX Developer, Custom Web Apps, No-Code Platforms, SaaS Development, API Integration, Node.js Developer, Express.js, MongoDB, Firebase, Tailwind CSS, Element UI, Vuex, Pinia, Nuxt SEO, Hyderabad, India, USA, UK, Canada, Europe, Australia, Web App Development, Hire Vue Developer, Hire Nuxt Developer, Freelance Web Developer",
     },
-    { property: 'og:title', content: 'Mukesh Kumar | Full Stack Developer' },
+
+    { property: "og:title", content: "Mukesh Kumar | Full Stack Developer" },
     {
-      property: 'og:description',
+      property: "og:description",
       content:
-        'Full Stack Developer specializing in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.',
+        "Full Stack Developer specializing in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.",
     },
-    { property: 'og:image', content: '/path-to-image.jpg' },
-    { property: 'og:url', content: 'https://yourwebsite.com' },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Mukesh Kumar | Full Stack Developer' },
+    { property: "og:image", content: "/path-to-image.jpg" },
+    { property: "og:url", content: "https://mukeshcodes.in" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "Mukesh Kumar | Full Stack Developer" },
     {
-      name: 'twitter:description',
+      name: "twitter:description",
       content:
-        'Full Stack Developer specializing in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.',
+        "Full Stack Developer specializing in Nuxt, Vue, React, Node.js, Power BI, and more. Based in Hyderabad, India.",
     },
-    { name: 'twitter:image', content: '/path-to-image.jpg' },
   ],
 });
 </script>
@@ -140,8 +132,10 @@ useHead({
   animation-delay: 500ms;
 }
 
-.container-height {
-  height: 90vh;
+@media screen and (min-width: 1024px) {
+  .container-height {
+    height: 90vh;
+  }
 }
 
 @media (max-width: 640px) {
