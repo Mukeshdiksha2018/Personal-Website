@@ -67,15 +67,29 @@
 
 <script setup>
 import { ref } from "vue";
+import { useRouter } from "vue-router";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { useNuxtApp } from "#app";
 
 const email = ref("");
 const password = ref("");
+const router = useRouter();
+const { $auth } = useNuxtApp(); // Access the injected auth instance
+const errorMessage = ref("");
 
-function handleLogin() {
-  console.log("Logging in with:", {
-    email: email.value,
-    password: password.value,
-  });
+async function handleLogin() {
+  try {
+    const userCredential = await signInWithEmailAndPassword(
+      $auth,
+      email.value,
+      password.value
+    );
+    console.log("User logged in:", userCredential.user);
+    router.push("/AddContent"); // Redirect to a protected page
+  } catch (error) {
+    console.error("Login error:", error.message);
+    errorMessage.value = "Invalid email or password. Please try again.";
+  }
 }
 </script>
 
