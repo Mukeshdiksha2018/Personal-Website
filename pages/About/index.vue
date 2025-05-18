@@ -90,34 +90,24 @@
 </template>
 
 <script setup>
-import { useHead } from "nuxt/app";
-
-useHead({
-  title: "About Mukesh Kumar - Full Stack Developer & Power BI Expert",
-  meta: [
-    {
-      name: "description",
-      content:
-        "Learn about Mukesh Kumar, a Full Stack Developer specializing in Nuxt, Vue, React, Node.js, and a Power BI Architect offering freelance consultation services.",
-    },
-    {
-      name: "keywords",
-      content:
-        "Full Stack Developer, Akkala Sai Mukesh Kumar, Nuxt.js Developer, Vue.js Developer, JavaScript Developer, Frontend Developer, Backend Developer, Web Development, Freelance Developer, Remote Developer, Software Engineer, UI/UX Developer, Custom Web Apps, No-Code Platforms, SaaS Development, API Integration, Node.js Developer, Express.js, MongoDB, Firebase, Tailwind CSS, Element UI, Vuex, Pinia, Nuxt SEO, Hyderabad, India, USA, UK, Canada, Europe, Australia, Web App Development, Hire Vue Developer, Hire Nuxt Developer, Freelance Web Developer",
-    },
-
-    {
-      property: "og:title",
-      content: "About Mukesh Kumar - Full Stack Developer & Power BI Expert",
-    },
-    {
-      property: "og:description",
-      content:
-        "Mukesh Kumar specializes in modern web development and Power BI solutions. Based in Hyderabad, India, and open for freelance consultation.",
-    },
-    { property: "og:type", content: "website" },
-  ],
-});
+  useSeoMeta({
+    title: "About Akkala Sai Mukesh Kumar | Full Stack Developer & Nuxt.js Expert",
+    description:
+      "Discover the background, skills, and expertise of Akkala Sai Mukesh Kumar — a Full Stack Developer specializing in Vue, Nuxt, React, Node.js, and Power BI. Providing freelance and consulting services worldwide.",
+    keywords:
+      "Akkala Sai Mukesh Kumar, About Mukesh Kumar, Full Stack Developer, Vue Developer, Nuxt Developer, Node.js Consultant, Power BI Expert, Freelance Developer, Web App Development, Remote Software Engineer, Hyderabad Developer, SaaS Architect, Data Analytics, Business Intelligence, JavaScript Developer, Custom Web Development, UI/UX Developer, API Development, India, Global Freelance Developer",
+    ogTitle: "About Akkala Sai Mukesh Kumar | Full Stack Developer & Nuxt.js Expert",
+    ogDescription:
+      "Meet Mukesh Kumar, a passionate Full Stack Developer offering services in Nuxt, Vue, Node.js, React, and Power BI. Based in Hyderabad, India — open to projects worldwide.",
+    ogType: "website",
+    ogUrl: "https://mukeshcodes.in/about",
+    ogImage: "/path-to-your-profile-or-banner.jpg",
+    twitterCard: "summary_large_image",
+    twitterTitle: "About Mukesh Kumar | Full Stack Developer",
+    twitterDescription:
+      "Full Stack Developer with expertise in Nuxt.js, Vue.js, Node.js, and Power BI. Learn more about Mukesh Kumar and his freelance consulting services.",
+    twitterImage: "/path-to-your-profile-or-banner.jpg",
+  });
 </script>
 
 <style scoped>
